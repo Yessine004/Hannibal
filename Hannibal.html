@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hannibal</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+
+        header {
+            background-color: #fff;
+            padding: 10px 0;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .container {
+            max-width: 960px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .logo {
+            display: inline-block;
+            margin-right: 20px;
+        }
+
+            .logo img {
+                height: 40px;
+            }
+
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: inline-block;
+        }
+
+        nav li {
+            display: inline-block;
+            margin-right: 20px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #333;
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        .post {
+            background-color: #fff;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .post-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+
+        .user-info {
+            display: flex;
+            align-items: center;
+        }
+
+            .user-info img {
+                width: 40px;
+                height: 40px;
+                border-radius: 50%;
+                margin-right: 10px;
+            }
+
+        .post-content {
+            margin-bottom: 10px;
+        }
+
+        .post-footer {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .like-count {
+            margin-right: 10px;
+        }
+
+        .comment-count {
+            margin-right: 10px;
+        }
+
+        .post-actions {
+            display: flex;
+            align-items: center;
+        }
+
+            .post-actions button {
+                background-color: transparent;
+                border: none;
+                font-size: 18px;
+                margin-right: 10px;
+                cursor: pointer;
+            }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="https://imgs.search.brave.com/-M6KYs1eUqy9-2P_TJK0ravfqiOhU5JP363j6tMRpsg/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly90My5m/dGNkbi5uZXQvanBn/LzA1LzU5LzUzLzM0/LzM2MF9GXzU1OTUz/MzQyNV9hbnlZYVlN/VUcxOW1JSng1RHVN/bDVRMFREWHpycE5r/QS5qcGc" alt="Hannibal Logo">
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Explore</a></li>
+                    <li><a href="#">Notifications</a></li>
+                    <li><a href="#">Messages</a></li>
+                    <li><a href="#">Profile</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <div class="post">
+                <div class="post-header">
+                    <div class="user-info">
+                        <img src="https://scontent.ftun5-1.fna.fbcdn.net/v/t39.30808-1/417566146_927865218994790_4470242895880419043_n.jpg?stp=dst-jpg_s200x200&_nc_cat=103&ccb=1-7&_nc_sid=0ecb9b&_nc_ohc=8aMHzOuxU_oQ7kNvgGeV6B_&_nc_ht=scontent.ftun5-1.fna&oh=00_AYAY-3frQwhuUwzt_ln8MJD1fLpKWn4e_EwN0agUDfitXw&oe=66AEC4B0" alt="User Profile Picture">
+                        <span>Yessine Aloui</span>
+                    </div>
+                    <span>1 day ago</span>
+                </div>
+                <div class="post-content">
+                    <p>"Carthage stood as a beacon of power and prosperity in the ancient world "</p>
+                    <img src="https://imgs.search.brave.com/eECAnwBM-wS-X5beWpA2YbNe9sWK1XUUcEiH6dh1puI/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9pbWcu/ZnJlZXBpay5jb20v/cHJlbWl1bS1waG90/by9kcmFtYXRpYy1z/a3ktYW5jaWVudC1j/YXJ0aGFnZS1oYW5u/aWJhbHMtYXJteS1t/YXJjaGVzLXRocm91/Z2gtaGlzdG9yaWMt/bGFuZHNjYXBlc18x/NTEzNTUtMzMxOTYu/anBnP3NpemU9NjI2/JmV4dD1qcGc" alt="Post Image">
+                </div>
+                <div class="post-footer">
+                    <div class="like-count">
+                        <span>1000000</span> Likes
+                    </div>
+                    <div class="comment-count">
+                        <span>25454540</span> Comments
+                    </div>
+                    <div class="post-actions">
+                        <button><i class="fas fa-thumbs-up"></i></button>
+                        <button><i class="fas fa-comment"></i></button>
+                        <button><i class="fas fa-share"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Hannibal</p>
+    </footer>
+</body>
+</html>
+<script src="https://kit.fontawesome.com/your_font_awesome_kit_id.js" crossorigin="anonymous"></script>
+<script>
+    const homeLink = document.querySelector('nav ul li:nth-child(1) a');
+    homeLink.addEventListener('click', (event) => {
+        event.preventDefault();
+        window.location.href = 'home.html';
+    });
+
+    const exploreLink = document.querySelector('nav ul li:nth-child(2) a');
+    exploreLink.addEventListener('click', (event) => {
+        event.preventDefault();
+        window.location.href = 'explore.html';
+    });
+
+    const notificationsLink = document.querySelector('nav ul li:nth-child(3) a');
+    notificationsLink.addEventListener('click', (event) => {
+        event.preventDefault();
+        window.location.href = 'notifications.html';
+    });
+
+    const messagesLink = document.querySelector('nav ul li:nth-child(4) a');
+    messagesLink.addEventListener('click', (event) => {
+        event.preventDefault();
+        window.location.href = 'messages.html';
+    });
+
+    const profileLink = document.querySelector('nav ul li:nth-child(5) a');
+    profileLink.addEventListener('click', (event) => {
+        event.preventDefault();
+        window.location.href = 'profile.html';
+    });
+</script>
+<script>
+    const profileLink = document.querySelector('nav ul li:nth-child(5) a');
+    profileLink.addEventListener('click', (event) => {
+        event.preventDefault();
+        window.location.href = 'profile.html';
+    });
+</script>
+<script>
+    const profileLink = document.querySelector('nav ul li:nth-child(5) a');
+    profileLink.addEventListener('click', (event) => {
+        event.preventDefault();
+        window.location.href = 'profile.html';
+    });
+</script>
+
+<script>
+    const profileLink = document.querySelector('nav ul li:nth-child(5) a');
+    profileLink.addEventListener('click', (event) => {
+        event.preventDefault();
+        window.location.href = 'profile.html';
+    });
+</script>
+<button style="position: fixed; top: 20px; right: 20px; background-color: #333; color: #fff; padding: 10px 20px; border: none; border-radius: 5px; cursor: pointer;">Log In</button>
+<script>
+    const loginButton = document.querySelector('button[style="position: fixed; top: 20px; right: 20px; background-color: #333; color: #fff; padding: 10px 20px; border: none; border-radius: 5px; cursor: pointer;"]');
+    loginButton.addEventListener('click', (event) => {
+        event.preventDefault();
+        window.location.href = 'login.html';
+    });
+</script> 
+<script>
+    const userProfilePicture = document.querySelector('.post-header .user-info img');
+    userProfilePicture.addEventListener('click', (event) => {
+        event.preventDefault();
+        window.location.href = 'profile.html';
+    });
+</script>

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .profile-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .profile-pic {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            cursor: pointer;
+            position: relative;
+        }
+
+            .profile-pic:hover::before {
+                content: "";
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                width: 30px;
+                height: 30px;
+                background-color: rgba(0, 0, 0, 0.5);
+                border-radius: 50%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                color: white;
+                font-size: 16px;
+            }
+
+            .profile-pic:hover::before {
+                content: "??";
+            }
+
+        .username {
+            font-size: 24px;
+            margin-top: 10px;
+        }
+
+        .buttons {
+            display: flex;
+            margin-top: 20px;
+        }
+
+        .button {
+            margin: 0 10px;
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="profile-container">
+        <img src="https://scontent.ftun5-1.fna.fbcdn.net/v/t39.30808-1/417566146_927865218994790_4470242895880419043_n.jpg?stp=dst-jpg_s200x200&_nc_cat=103&ccb=1-7&_nc_sid=0ecb9b&_nc_ohc=8aMHzOuxU_oQ7kNvgGeV6B_&_nc_ht=scontent.ftun5-1.fna&oh=00_AYAY-3frQwhuUwzt_ln8MJD1fLpKWn4e_EwN0agUDfitXw&oe=66AEC4B0" alt="Profile Picture" class="profile-pic">
+        <h2 class="username">Yessine Aloui</h2>
+        <div class="buttons">
+            <button class="button">Photos</button>
+            <button class="button">Details</button>
+            <button class="button">Personal Information</button>
+            <button class="button">Post...</button>
+        </div>
+    </div>
+
+    <script>
+        const photosButton = document.querySelector('.buttons button:nth-child(1)');
+
+        photosButton.addEventListener('click', () => {
+            window.location.href = 'photos.html'; 
+        });
+    </script>
+    <script>
+        const detailsButton = document.querySelector('.buttons button:nth-child(2)');
+
+        detailsButton.addEventListener('click', () => {
+            window.location.href = 'details.html'; 
+        });
+    </script>
+    <script>
+        const personalInfoButton = document.querySelector('.buttons button:nth-child(3)');
+
+        personalInfoButton.addEventListener('click', () => {
+            window.location.href = 'personalInfo.html'; 
+        });
+    </script>
+
+
+</body>
+</html>
